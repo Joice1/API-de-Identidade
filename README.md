@@ -35,22 +35,29 @@ O projeto implementa boas práticas de segurança, documentação e testes autom
 - [Docker](https://www.docker.com/)  
 
 ### Passos  
-```bash
 # 1. Clonar o repositório
-git clone https://github.com/seu-usuario/seu-repositorio.git
+
+git clone: 
+```bash
+https://github.com/seu-usuario/seu-repositorio.git
+```
 
 
 ## 🖥️ Aplicação disponível
 
 A aplicação estará disponível em:  
+```bash
 [http://localhost:8082](http://localhost:8082)
+```
 
 ---
 
 ## 📖 Documentação
 
 Após rodar a aplicação, acesse o Swagger UI:  
+```bash
 [http://localhost:8082/swagger-ui.html](http://localhost:8082/swagger-ui.html)
+```
 
 ---
 
