@@ -66,6 +66,7 @@ Após rodar a aplicação, acesse o Swagger UI:
 Os testes foram implementados com **JUnit**. Para executá-los:  
 ```bash
 mvn test
+```
 
 ### 🗂️ Estrutura do projeto (resumida)
 
@@ -81,6 +82,9 @@ src/main/java
       ├── helpers
       ├── repositories
       └── services
+```
 
-# 3. Subir os containers (API + PostgreSQL)
+# 🐳 Subir os containers (API + PostgreSQL)
+```bash
 docker-compose up -d --build
+```
