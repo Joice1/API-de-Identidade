@@ -21,18 +21,20 @@ public interface UsuarioRepository extends JpaRepository<Usuario, UUID> {
 			WHERE u.email = :pEmail
 			""")
 	Usuario find(@Param("pEmail") String email);
-	 
-	 /* 
-	  * Método escrito com JPQL para que o Spring Data possa 
-	  * consultar 1 usuário no banco de dados baseado  
-	no email e na senha  
-	  */ 
-	 @Query(""" 
-	   SELECT u FROM Usuario u 
-	   WHERE u.email = :pEmail AND u.senha = :pSenha 
-	   """) 
-	 Usuario find( 
-	@Param("pEmail") String email,  
-	@Param("pSenha") String senha); 
-	 
-	} 
+	
+	/*
+	 *	Método escrito com JPQL para que o Spring Data possa
+	 *	consultar 1 usuário no banco de dados baseado no email e na senha 
+	 */
+	@Query("""
+			SELECT u FROM Usuario u
+			WHERE u.email = :pEmail AND u.senha = :pSenha
+			""")
+	Usuario find(@Param("pEmail") String email, @Param("pSenha") String senha);	
+}
+
+
+
+
+
+
